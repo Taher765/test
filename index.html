@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOCIAL MEDIA</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- START NAVBAR -->
+    <div class="nav-social fixed-top py-3 bg-light">
+      <div class="container">
+        <nav class="d-flex align-items-center justify-content-between">
+          <div class="logo"><a href="index.html"> Social Media </a></div>
+          <div class="user-info d-flex gap-2">
+            <div>
+              <button
+                id="openModelLogin"
+                class="btn btn-outline-success btn-sm"
+              >
+                Login
+              </button>
+            </div>
+            <div>
+              <button
+                id="openModelRegister"
+                class="btn btn-outline-primary btn-sm"
+              >
+                Register
+              </button>
+            </div>
+            <!-- Start User Info -->
+            <div class="user d-flex align-items-center" id="userInfo">
+              <img
+                class="user-image"
+                src="images/blank-profile-picture-973460_1280.webp"
+                alt=""
+              />
+              <span class="me-3" id="userName"></span>
+            </div>
+            <div>
+              <button id="logoutBtn" class="btn btn-outline-danger btn-sm">
+                Log Out
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- END NAVBAR -->
+    <!-- START CONTENT -->
+    <main class="content mt-5 pt-3">
+      <div class="container">
+        <div class="posts-wrapper p-2">
+          <!-- POSTS  -->
+
+          <!-- Posts Hare -->
+
+          <!-- // POSTS -->
+        </div>
+      </div>
+    </main>
+    <!-- END CONTENT -->
+    <!-- START MODAL -->
+    <div id="boxModel" class="box-model p-3">
+      <i id="closeBtn" class="fa-solid fa-close"></i>
+      <form class="w-50 m-auto">
+        <input
+          id="usernameInput"
+          class="form-control mb-3"
+          type="text"
+          placeholder="User Name"
+          value="taher100"
+        />
+        <input
+          id="passwordInput"
+          class="form-control mb-3"
+          type="text"
+          placeholder="Password"
+          value="123456"
+        />
+        <button id="loginBtn" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+    <button class="btn-addPost" id="btnAddPost">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+    <!-- END MODAL -->
+
+    <script src="node_modules//axios/dist/axios.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
